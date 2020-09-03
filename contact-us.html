@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="html 5 template">
+    <meta name="author" content="">
+    <title>Find Houses - HTML5 Template</title>
+    <!-- LEAFLET MAP -->
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/leaflet-gesture-handling.min.css">
+    <link rel="stylesheet" href="css/leaflet.markercluster.css">
+    <link rel="stylesheet" href="css/leaflet.markercluster.default.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i%7CMontserrat:600,800" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Slider Revolution CSS Files -->
+    <link rel="stylesheet" href="revolution/css/settings.css">
+    <link rel="stylesheet" href="revolution/css/layers.css">
+    <link rel="stylesheet" href="revolution/css/navigation.css">
+    <!-- ARCHIVES CSS -->
+    <link rel="stylesheet" href="css/timedropper.css">
+    <link rel="stylesheet" href="css/datedropper.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slick.css">
+    
+    <script src="js/slick4.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+      
+      <!-- GOOGLE FONTS -->
+      <!-- FONT AWESOME -->
+      <!-- LEAFLET MAP -->
+      <link rel="stylesheet" href="css/leaflet.css">
+      <link rel="stylesheet" href="css/leaflet-gesture-handling.min.css">
+      <link rel="stylesheet" href="css/leaflet.markercluster.css">
+      <link rel="stylesheet" href="css/leaflet.markercluster.default.css">
+      <!-- ARCHIVES CSS -->
+     <link rel="stylesheet" id="color" href="css/default.css">
+  
+</head>
+
+<body class="int_dark_bg h20">
+    <!-- Wrapper -->
+    <div id="wrapper" class="int_main_wraapper">
+        <!-- START SECTION HEADINGS -->
+        <!-- Header Container
+        ================================================== -->
+        <header id="header-container">
+            <!-- Header -->
+            <div id="header" class="int_content_wraapper">
+                <div class="container-fluid">
+                    <!-- Left Side Content -->
+                    <div class="left-side">
+                        <!-- Logo -->
+                        <div id="logo" class="col-lg-3 logo-white">
+                            <a href="index.html"><img src="images/winlink.png" alt=""></a>
+                        </div>
+                        <!-- Mobile Navigation -->
+                        <div class="mmenu-trigger">
+                            <button class="hamburger hamburger--collapse" type="button">
+                                <span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+
+
+                        <!-- Main Navigation -->
+                        <nav id="navigation" class="style-1 black">
+                            <ul id="responsive">
+                                <li><a class="current" href="index.html">Accueil</a> </li>
+                                   
+                                   
+                                <li><a href="index.html#achat">Achat</a></li>
+
+                                <li><a href="index.html#location">Location</a></li>
+                                    
+                                
+                                <li><a href="index.html#services">Proprietaire</a></li>
+                                    
+                                
+                                <li><a href="index.html#chasseur">Chasseur de bien </a>  </li>
+                                    
+
+                                <li><a href="index.html#blog">blog</a></li>
+                                    
+                                
+                                <li><a href="contact-us.html">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="clearfix"></div>
+                        <!-- Main Navigation / End -->
+                    </div>
+                    <!-- Left Side Content / End -->
+
+                    <!-- Right Side Content / End -->
+                    <div class="right-side hidden-lg-down">
+                        <!-- Header Widget -->
+                        <div class="header-widget mr-4">
+                            <a href="add-property.html" class="button border">Connexion</a>
+                        </div>
+                        <!-- Header Widget / End -->
+                    </div>
+                    <!-- Right Side Content / End -->
+
+                </div>
+            </div>
+            <!-- Header / End -->
+
+        </header>
+        <div class="clearfix"></div>
+        <!-- Header Container / End -->
+  <div class="backgContact">
+        <section class="headings">
+            <div class="text-heading text-center">
+                <div class="container">
+                    <h1>Contactez-nous</h1>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION HEADINGS -->
+
+        <!-- START SECTION CONTACT US -->
+      
+        <section class="contact-us">
+            <div class="container">
+                <div class="property-location mb-5">
+                    <h3>Notre localisation</h3>
+                    <div class="divider-fade"></div>
+                    <div id="map-contact" class="contact-map"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <h3 class="mb-4">Contactez-nous</h3>
+
+
+
+
+                        <form id="contactform" class="contact-form" name="contactform" method="post" action="process-contact.php" novalidate>
+                           
+                            
+                          
+                                <input type="text" required class="form-control input-custom input-full" name="name" placeholder="Nom" id="nomUserContact">
+                            
+                        
+                                <input type="text" required class="form-control input-custom input-full" name="lastname" placeholder="Prenom" id="prenomUserContact">
+                                                        
+                            <button type="submit" id="submit-contact" class="btn btn-primary btn-lg">Envoyer</button>
+                        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!--
+                        <form id="contactform" class="contact-form" name="contactform" method="post" action="process-contact.php" novalidate>
+                            <div id="success" class="successform">
+                                <p class="alert alert-success font-weight-bold" role="alert">Message envoyé</p>
+                            </div>
+                            <div id="error" class="errorform">
+                                <p>Erreur, veuillez réessayer plus tard </p>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" required class="form-control input-custom input-full" name="name" placeholder="Nom" id="nomUserContact">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" required class="form-control input-custom input-full" name="lastname" placeholder="Prenom" id="prenomUserContact">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control input-custom input-full" name="email" placeholder="Email" id="emailUserContact">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control textarea-custom input-full" id="ccomment" name="message" required rows="8" placeholder="Message"></textarea>
+                            </div>
+
+
+                            
+                            <button type="submit" id="submit-contact" class="btn btn-primary btn-lg">Envoyer</button>
+                        </form>
+                        -->
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12 bgc">
+                        <div class="call-info">
+                            <h3>Details Contact</h3>
+                        </br>
+                           
+                            <ul>
+                                <li>
+                                    <div class="info">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <p class="in-p">
+                                            45 Rue Perrin Solliers, 13006 Marseille</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        <p class="in-p">04 84 25 35 56</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        <p class="in-p ti">support@findhouses.com</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info cll">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <p class="in-p ti">8:00 a.m - 9:00 p.m</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <!-- END SECTION CONTACT US -->
+
+        <!-- START FOOTER -->
+        <footer class="first-footer">
+            <div class="top-footer bg-black-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="netabout">
+                                <a href="index.html" class="logo">
+                                    <img src="images/winlink.png" alt="netcom">
+                                </a>
+                                <p> Notre cabinet intervient auprès de particuliers et professionnels en transaction et sur des missions de conseil, assistance dans la réalisation de projets immobiliers, nous avons pour vocation de faciliter la réalisation de projets dans un cadre professionnel et de proximité.</p>
+                            </div>
+                            <div class="contactus">
+                                <ul>
+                                    <li>
+                                        <div class="info">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            <p class="in-p">45 Rue Perrin Solliers, 13006 Marseille</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <p class="in-p">04 84 25 35 56</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            <p class="in-p ti">support@findhouses.com</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="navigation">
+                                <h3>Navigation</h3>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li><a href="#">Acceuil</a></li>
+                                        <li><a href="#">Recherche de bien </a></li>
+                                        <li><a href="#achat">Bien à vendre</a></li>
+                                        <li><a href="#achat">Maisons disponible</a></li>
+                                        <li class="no-mgb"><a href="#chasseur">Chasseur de bien</a></li>
+                                    </ul>
+                                    <ul class="nav-right">
+                                        <li><a href="#location">Location de bien </a></li>
+                                        <li><a href="#blog">Conseil</a></li>
+                                        <li><a href="#Services">Services</a></li>
+                                        <li><a href="#Services">Proprietaires</a></li>
+                                        <li class="no-mgb"><a href="contact-us.html">Contact</a></li>
+                                    </ul>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="widget">
+                                <h3>FaceBook</h3>
+                                <div class="twitter-widget contuct">
+                                    <div class="twitter-area">
+                                        <div class="single-item">
+                                            <div class="icon-holder">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h5><a href="https://www.facebook.com/winlinkimmo13006/">WinlinkImmo</a> Acceuil </h5>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="single-item">
+                                            <div class="icon-holder">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h5><a href="https://www.facebook.com/winlinkimmo13006/services/?ref=page_internal">WinlinkImmo</a> Tous nos services </h5>
+                                                
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                   
+                        <div class="col-lg-12 col-md-1" >
+                            <div class="navigation">
+                                <h3></h3>
+                                <div class="nav-footer">
+                                    <ul>
+                                        <li>appartement Marseille 13000</li>
+                                        <li>appartement Marseille 13003 </li>
+                                        <li>appartement Marseille 13006</li>
+                                        <li>appartement Marseille 13009</li>
+                                        <li>appartement Marseille 13012</li>
+                                        <li>appartement Marseille 13015</li>
+
+                                    </ul>
+                                    <ul class="nav-right">
+                                        <li>appartement Marseille 13001</li>
+                                        <li>appartement Marseille 13004</li>
+                                        <li>appartement Marseille 13007</li>
+                                        <li>appartement Marseille 13010</li>
+                                        <li>appartement Marseille 13013</li>
+                                        <li>appartement Marseille 13016</li>
+                                    </ul>
+                                    <ul class="nav-right">
+                                        <li>appartement Marseille 13002</li>
+                                        <li>appartement Marseille 13004</li>
+                                        <li>appartement Marseille 13008</li>
+                                        <li>appartement Marseille 13011</li>
+                                        <li>appartement Marseille 13014</li>
+                                        <li>appartement Marseille 13348</li>
+                                    </ul>
+                                    <ul class="nav-right">
+                                        <li>appartement Marseille 13002</li>
+                                        <li>appartement Marseille 13004</li>
+                                        <li>appartement Marseille 13008</li>
+                                        <li>appartement Marseille 13011</li>
+                                        <li>appartement Marseille 13014</li>
+                                        <li>appartement Marseille 13348</li>
+                                    </ul>
+                                    <ul class="nav-right">
+                                        <li>appartement Marseille 13002</li>
+                                        <li>appartement Marseille 13004</li>
+                                        <li>appartement Marseille 13008</li>
+                                        <li>appartement Marseille 13011</li>
+                                        <li>appartement Marseille 13014</li>
+                                        <li>appartement Marseille 13348</li>
+                                    </ul>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-footer">
+                <div class="container">
+                    <p>2020 © Copyright - All Rights Reserved.</p>
+                    <p>Made With <i class="fa fa-heart" aria-hidden="true"></i> By Code-Theme</p>
+                </div>
+            </div>
+        </footer>
+
+        <a data-scroll href="#wrapper" class="go-up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+        <!-- END FOOTER -->
+
+        <!-- START PRELOADER -->
+        <div id="preloader">
+            <div id="status">
+                <div class="status-mes"></div>
+            </div>
+        </div>
+        <!-- END PRELOADER -->
+
+        <!-- ARCHIVES JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/moment.js"></script>
+        <script src="js/transition.min.js"></script>
+        <script src="js/transition.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mmenu.min.js"></script>
+        <script src="js/mmenu.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/slick2.js"></script>
+        <script src="js/fitvids.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/lightcase.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/ajaxchimp.min.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/newsletter.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/searched.js"></script>
+        <script src="js/forms-2.js"></script>
+        <script src="js/color-switcher.js"></script>
+        <script src="js/nice-select.js"></script>
+        <!-- Slider Revolution scripts -->
+        <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script>
+            $(window).on('scroll load', function() {
+                $("#header.cloned #logo img").attr("src", $('#header #logo img').attr('data-sticky-logo'));
+            });
+
+        </script>
+        <!-- MAIN JS -->
+        <script src="js/script.js"></script>
+        <!-- ARCHIVES JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mmenu.min.js"></script>
+        <script src="js/mmenu.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/forms.js"></script>
+        <script src="js/ajaxchimp.min.js"></script>
+        <script src="js/newsletter.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet-gesture-handling.min.js"></script>
+        <script src="js/leaflet-providers.js"></script>
+        <script src="js/leaflet.markercluster.js"></script>
+        <script src="js/map-single.js"></script>
+        <script src="js/color-switcher.js"></script>
+        <script src="js/inner.js"></script>
+
+    </div>
+
+    </div>
+    <!-- Wrapper / End -->
+</body>
+
+</html>
